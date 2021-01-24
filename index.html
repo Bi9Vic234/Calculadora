@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<title>Calculadora</title>
+</head>
+<body>
+	<h1></h1>
+	<div class="calculadora">
+		<div><input type="text" id="pantalla" onKeyPress="return acceptNum(event)" ></div>
+		<div><input class="boton segundoColor" type="submit" value="CE" onclick="borrar('reset')" ></div>
+		<div><input class="boton tercerColor" type="submit" value="«-" onclick="borrar('supr')" ></div>
+		<div><input class="boton tercerColor" type="submit" value="+/-" onclick="masmenos('-')" ></div>
+		<div><input class="boton " type="submit" value="+" onclick="calcular('suma')" ></div>
+		<div><input class="boton " type="submit" value="7" onclick="registrarEnPantalla(7)"></div>
+		<div><input class="boton " type="submit" value="8" onclick="registrarEnPantalla(8)"></div>
+		<div><input class="boton " type="submit" value="9" onclick="registrarEnPantalla(9)"></div>
+
+		<div><input class="boton " type="submit" value="-" onclick="calcular('resta')" ></div>
+		<div><input class="boton " type="submit" value="4" onclick="registrarEnPantalla(4)"></div>
+		<div><input class="boton " type="submit" value="5" onclick="registrarEnPantalla(5)"></div>
+		<div><input class="boton " type="submit" value="6" onclick="registrarEnPantalla(6)"></div>
+
+		<div><input class="boton " type="submit" value="X" onclick="calcular('multiplicacion')"></div>
+		<div><input class="boton " type="submit" value="1" onclick="registrarEnPantalla(1)"></div>
+		<div><input class="boton " type="submit" value="2" onclick="registrarEnPantalla(2)"></div>
+		<div><input class="boton " type="submit" value="3" onclick="registrarEnPantalla(3)"></div>
+
+		<div><input class="boton " type="submit" value="/" onclick="calcular('division')"></div>
+		<div><input class="boton " type="submit" value="■" onclick="registrarEnPantalla('.')"></div>
+		<div><input class="boton " type="submit" value="0" onclick="registrarEnPantalla(0)"></div>
+
+		<div><input class="boton segundoColor resultado" type="submit" value="=" onclick="resultado('resultado')" ></div>                                 
+	</div>
+	<footer></footer>
+<script src="script.js"></script>
+</body>
+</html>
